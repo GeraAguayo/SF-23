@@ -80,16 +80,16 @@ void loop()
 
 void moveForward(){
   //Motor-1 direction
-  digitalWrite(7, HIGH);
-  digitalWrite(4, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(4, HIGH);
   //Motor-1 speed
-  analogWrite(8, 1000);
+  analogWrite(8, 150);
   
   //Motor-2 direction
   digitalWrite(5, HIGH);
   digitalWrite(3, LOW);
   //Motor-2 speed
-  analogWrite(9,1000);
+  analogWrite(9,255);
   
 }
 
@@ -110,43 +110,42 @@ void stopMotors(){
 
 void moveBack(){
   //Motor-1 Direction
-  digitalWrite(7,LOW);
-  digitalWrite(4, HIGH);
+  digitalWrite(7,HIGH);
+  digitalWrite(4, LOW);
   //Motor-1 Speed
-  analogWrite(8,500);
+  analogWrite(8,150);
   
   //Motor-2 Direction
   digitalWrite(5,LOW);
   digitalWrite(3,HIGH);
   //Motor-2 Speed
-  analogWrite(9,500);
+  analogWrite(9,255);
 }
 
 void steerLeft(){
   //Motor-1 Direction
-  digitalWrite(7,HIGH);
-  digitalWrite(4,LOW);
+  digitalWrite(7,LOW);
+  digitalWrite(4,HIGH);
   //Motor-1 Speed
-  analogWrite(8,500);
+  analogWrite(8,0);
   
   //Motor-2 Direction
   digitalWrite(5, HIGH);
   digitalWrite(3, LOW);
   //Motor-2 Speed
-  analogWrite(9, 1000);
+  analogWrite(9, 150);
 }
 
 void steerRight(){
   //Motor-1 Direction
-  digitalWrite(7,HIGH);
-  digitalWrite(4,LOW);
+  digitalWrite(7,LOW);
+  digitalWrite(4,HIGH);
   //Motor-1 Speed
-  analogWrite(8, 1000);
+  analogWrite(8, 150);
   
   //Motor-2 direction
   digitalWrite(5,HIGH);
   digitalWrite(3,LOW);
   //Motor-2 speed
-  analogWrite(9,500);
+  analogWrite(9,0);
 }
-
